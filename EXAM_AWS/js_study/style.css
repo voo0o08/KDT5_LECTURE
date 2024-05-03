@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-image: url('imgs/image.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  /* 투명한 창 필요 없을 듯? */
+  #container {
+      position: relative;
+      width: 90%;
+      height: 80%;
+      box-shadow: 0 0 15px 1px #3b3b41;
+      background-color: rgba(10, 10, 10, 0.3);
+      border-radius: 15px;
+  }
+  
+  #input {
+      width: 180px;
+      height: 45px;
+      position: absolute; /*부모 요소를 기준으로 절대 위치*/
+      bottom: 0; /*부모의 하단에 맞춤*/
+      left: 50%; /*position:absolute혹은relative와 함께 사용*/
+      padding: 10px;
+      transform: translateX(-50%); /*요소 기준 그니까 끝점 기준으로 위에서 옮겨져버려가지고 이거를 중간으로 싹 긁어오는 그런*/
+      font-size: 16px;
+      border: none;
+  }
+  
+  .word {
+      position: absolute;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 500;
+  }
