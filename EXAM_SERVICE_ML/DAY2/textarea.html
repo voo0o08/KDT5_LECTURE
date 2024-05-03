@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>자기소개</legend>
+            <p>
+                <label for="title">좌우명
+                    <input type="text" id="title" name="title">
+                </label>
+            </p>
+            <p>
+                <label for="desc">자기소개
+                    <textarea name="desc" id="desc"></textarea>
+                </label>
+            </p>    
+            <select name="my" id="my">
+                <optgroup label="웹">
+                    <option value="frontend">프론트</option>
+                    <option value="backend">백</option>
+                </optgroup>
+
+                <optgroup label="데이터">
+                    <option value="visualization">시각화</option>
+                    <option value="analysis">분석</option>
+                </optgroup>
+
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>

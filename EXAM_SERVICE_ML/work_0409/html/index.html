@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/my_style.css">
+</head>
+<body>
+    <center>
+    <form>
+        <!-- <input type="text" name="data" placeholder="data"><br> -->
+        <label for="sex">성별</label>
+        <select name="성별" id="sex">
+            <option value=1>남자</option>
+            <option value=0>여자</option>
+        </select>
+
+        <label for="age">나이</label> <!--for는 해당 id와 동일해야함-->
+        <input type="number" name="user_age" placeholder="나이를 입력" id="age">
+
+        <label for="height">키</label>
+        <input type="number" name="user_height" placeholder="키를 입력" id="height">
+
+        <label for="fam">가족력</label>
+        <select name="가족력" id="fam">
+            <option value=0>있음</option>
+            <option value=1>없음</option>
+        </select>
+
+        <label for="FAVC">고열량 식품 섭취</label>
+        <select name="FAVC" id="FAVC">
+            <option value=0>안먹음</option>
+            <option value=1>먹음</option>
+        </select>
+
+        <label for="FCVC">야채 섭취</label>
+        <select name="FCVC" id="FCVC">
+            <option value=1>안먹음</option>
+            <option value=2>가끔</option>
+            <option value=3>좋아함</option>
+        </select>
+
+        <label for="NCP">하루 끼니 횟수</label>
+        <select name="NCP" id="NCP">
+            <option value=1>한끼</option>
+            <option value=2>두끼</option>
+            <option value=3>세끼</option>
+            <option value=4>네끼</option>
+        </select>
+
+        <label for="CAEC">간식</label>
+        <select name="CAEC" id="CAEC">
+            <option value=0>항상</option>
+            <option value=1>자주</option>
+            <option value=2>가끔</option>
+            <option value=3>안먹음</option>
+        </select>
+
+        <label for="SMOKE">흡연 유무</label>
+        <select name="SMOKE" id="SMOKE">
+            <option value=0>비흡연자</option>
+            <option value=1>흡연자</option>
+        </select>
+
+        <label for="CH2O">하루 수분 섭취[L]</label>
+        <select name="CH2O" id="CH2O">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+        </select>
+
+        <label for="SCC">운동을 하나요?</label>
+        <select name="SCC" id="SCC">
+            <option value=0>안해요</option>
+            <option value=1>해요</option>
+        </select>
+
+        <label for="FAF">활동량</label>
+        <select name="FAF" id="FAF">
+            <option value=3>많음</option>
+            <option value=2>가끔</option>
+            <option value=1>딱히</option>
+            <option value=0>안움직임</option>
+        </select>
+
+        <label for="TUE">스마트폰 사용량</label>
+        <select name="TUE" id="TUE">
+            <option value=2>자주 봄</option>
+            <option value=1>적당히</option>
+            <option value=0>잘 안봄</option>
+        </select>
+
+        <label for="CALC">음주 빈도</label>
+        <select name="CALC" id="CALC">
+            <option value=0>항상</option>
+            <option value=1>자주</option>
+            <option value=2>가끔</option>
+            <option value=3>안먹음</option>
+        </select>
+
+        <label for="MTRANS">이동수단</label>
+        <select name="MTRANS" id="MTRANS">
+            <option value=10000>자동차</option>
+            <option value=01000>자전거</option>
+            <option value=00100>오토바이</option>
+            <option value=00010>대중교통</option>
+            <option value=00001>어디서나 당당하게 걷기</option>
+        </select>
+
+        <br>
+        <input type="submit">
+    </form>
+    <hr>
+    RESULT <hr>
+    당신의 비만도는 {}입니다.
+    </center>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/*만약 color 지정을 해놓은 애들은 자기거 우선이고 딱히 지정된 color가 없다면 red가 됨*/
+* {color:red}
+
+/*태그명 선택자 -> p태그는 일괄적용*/
+p{background-color: green; font-size:40px; border:5px dotted rebeccapurple; color: white;}
+
+/*아이디 선택자*/
+#second_p {background-color: hotpink;}
+
+/*클래스 속성 값이 동일한 부분에 적용*/
+.para{background-color:darksalmon;}
