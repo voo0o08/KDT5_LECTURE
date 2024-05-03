@@ -1,0 +1,22 @@
+{% block header %}
+<h2><font color="blue">[질문게시판]</font></h2>
+{% endblock %}
+{% block content %}
+{% if questions %}
+<table>
+  <tr>
+    <td>아이디</td>
+    <td>제목</td>
+  </tr>
+
+  {% for question in questions %}
+  <tr>
+    <td>{{question.id}}</td>
+    <td>{{question.content}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+  <p>등록된 질문 없음</p>
+{% endif %}
+{% endblock %}

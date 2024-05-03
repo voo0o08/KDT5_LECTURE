@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>teamproject_weareone</title>
+    <link
+      href="{{url_for('static', filename='css/team.css')}}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <audio controls autoplay="autoplay">
+      <source src="../static/music/goodbye_summer.mp3" type="audio/mpeg" />
+    </audio>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <h1>학창시절의 당신은 무슨 음악을 들었나요?</h1>
+    <h4><strong>team : WeAreOne</strong></h4>
+    <hr color="red" size="3" />
+    <br />
+
+    <h3>그때 들었던 음악을 좀 더 알고싶지 않나요?</h3>
+    <br />
+    <h3>그래서 준비했습니다</h3>
+    <br /><br /><br />
+    <h3>📌음악 장르 분석하기</h3>
+    <br /><br /><br />
+
+    <hr color="red" size="3" />
+    <br />
+    <h1>이윤서</h1>
+    <h3>음악 파일을 입력해주세요~</h3>
+    <form method="{{method}}" action="{{action}}" enctype="multipart/form-data">
+      <!-- method="post"
+      action="./MyWeb/static/file2_test_ML_rec.py"
+      enctype="multipart/form-data"
+    > -->
+
+      <input
+        type="file"
+        name="audio"
+        accept="audio/wav, audio/mp3"
+      /><br /><br />
+      <br />
+      <input type="submit" /><br /><br /><br />
+    </form>
+  </body>
+</html>

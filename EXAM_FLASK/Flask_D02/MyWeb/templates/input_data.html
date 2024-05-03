@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT_DATA</title>
+</head>
+<body>
+    <!--<form method = 'POST' action = "/input/save_post">  -->
+    <form method = "{{method}}" action = "{{action}}" enctype="multipart/form-data">
+        <input type = "file" name="img" accept = "image/png, image/jpeg"><br>
+        <input type = "text" name="value" placeholder="value"><br>
+        <input type = "text" name="message" placeholder="message"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

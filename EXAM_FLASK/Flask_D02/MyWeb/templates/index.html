@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>***My Web***</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style_2.css')}}">
+  </head>
+
+  <body>
+    <h1>hello flask {{name}}</h1>
+    <hr/>
+    <img src="{{url_for('static', filename='img/mine.jpg')}}" alt="newjeans">
+    <img src="../static/img/mine.jpg" alt="my_girl">
+    <!-- 밑에 거 redirect / 그냥 url base로 주셈 -->
+  </body>
+</html>

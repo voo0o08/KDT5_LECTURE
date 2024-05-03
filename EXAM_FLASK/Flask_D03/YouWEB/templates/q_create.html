@@ -1,0 +1,13 @@
+{% extends "basic.html" %}
+
+{% block title %} 질문등록 {% endblock %}
+
+{% block header %} <h2> [새로운 질문] </h2>{% endblock %}
+
+{% block content %} 
+<form action="/save" method='POST' enctype="multipart/form-data">
+    <label> 제  목 </label><input type='text' name='title' id='title'> <br/>
+    <label> 내  용 </label><input type='text' name='content' id='content'> <br/>
+    <input type='submit' value='등록'> 
+</form>
+{% endblock %}
